@@ -9,7 +9,8 @@ int main(int argc, char *argv[]){
     }
 
     int length = strlen(argv[1]);
-    char filename[] = argv[1];
+    char filename[20];
+    strcpy(filename, argv[1]);
 
     if (filename[length-1] != 't' || filename[length-2] != 'x' || filename[length-3] != 't'|| filename[length-4] != '.'){
         printf("Error. Cannot open requested file.");
