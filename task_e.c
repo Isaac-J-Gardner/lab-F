@@ -17,7 +17,7 @@ int main(int argc, char *argv[]){
 
     if (fptr == NULL){
         printf("Error. Cannot open requested file.");
-        return 1;
+        return 0;
     }
 	
 
