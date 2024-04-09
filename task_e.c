@@ -2,12 +2,6 @@
 int main(int argc, char *argv[]){
     
 	
-	// Enter your code under here to read the filename from the command line
-	printf("Argument count: %d\n", argc);
-    for (int i = 0; i < argc; i++) {
-        printf("Argument %d: %s\n", i, argv[i]);
-    }
-	
 	
 	// Read number from file - do not edit
 	double num;
