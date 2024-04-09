@@ -12,13 +12,12 @@ int main(int argc, char *argv[]){
 	double num;
 	FILE *fptr;
 	fptr = fopen(argv[1], "r");
-	fscanf(fptr, "%lf", &num);
-	fclose(fptr);
-
     if (fptr == NULL){
         printf("Error. Cannot open requested file.");
-        return 0;
+        return 1;
     }
+	fscanf(fptr, "%lf", &num);
+	fclose(fptr);
 	
 
 	// Enter your code from Lab D to print JSON output (with name, email, number1, number2) goes under here
