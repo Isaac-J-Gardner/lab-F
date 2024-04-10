@@ -15,13 +15,19 @@ int main(void) {
     
 	
     // Enter your code under here
+    if (user_input[0] != '.'){
+        printf("Error! The first character entered should be a .");
+        return 0;
+    }
+
     for (int i = 0; i < 258; i++){
         if (strcmp(user_input, country_codes[i].domain) == 0){
+            printf("This is the domain for: ");
             printf(country_codes[i].country);
             return 0;
         }
     }
-    printf("domain not found");
+    printf("Domain not found");
 
     return 0;
 }
