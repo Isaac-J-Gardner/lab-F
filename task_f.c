@@ -27,7 +27,7 @@ int main(void) {
             return 0;
         }
     }
-    printf("Domain not found");
+    printf("Domain not found.");
 
     return 0;
 }
