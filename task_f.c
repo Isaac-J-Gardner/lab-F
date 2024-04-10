@@ -23,7 +23,7 @@ int main(void) {
     for (int i = 0; i < 258; i++){
         if (strcmp(user_input, country_codes[i].domain) == 0){
             printf("This is the domain for: ");
-            printf(country_codes[i].country);
+            printf("%s", country_codes[i].country);
             return 0;
         }
     }
